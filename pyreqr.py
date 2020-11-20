@@ -121,8 +121,9 @@ def main():
 	global reckless, protocol, host, port, portadd, startTime
 	protocolSet, _THREADS = None, None
 	try:
+		clearTerminal()
 		(opts, args) = getopt.getopt(sys.argv[1:], 'rshd:vp:vt:v', ['reckless', 'ssl', 'http', 'domain=', 'port=', 'threads='])
-	except (getopt.GetoptError) as error:
+	except ((getopt.GetoptError), Exception) as error:
 		print(bcolors.FAIL + str(error) + bcolors.ENDC)
 		sys.exit(2)
 	for (o, a) in opts:
@@ -140,7 +141,6 @@ def main():
 			_THREADS = a
 	
 	try:
-		clearTerminal()
 		print("PyReqr - Distributed threaded python Requests testing tool.")
 		if not protocolSet:
 			print("Attempting to load proxies...\nSend Requests over HTTPS? Y/n")
