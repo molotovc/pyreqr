@@ -55,7 +55,7 @@ class threadedRequests(threading.Thread):
 			if pxy != "":
 				try:
 					url = protocol + "://" + host + portadd + "/"
-					proxy = {"https": protocol + "://" + pxy}
+					proxy = {protocol: "http://" + pxy}
 					fua = fake_useragent.UserAgent()
 					s = requests.Session()
 					response = s.get(url, proxies=proxy, allow_redirects=False, stream=True, headers={
