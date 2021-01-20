@@ -141,7 +141,7 @@ def main():
 			_THREADS = a
 	
 	try:
-		print("PyReqr - Distributed threaded python Requests testing tool.")
+		print("PyReqr - Distributed threaded python GET Requests stress testing tool.")
 		if not protocolSet:
 			print("Attempting to load proxies...\nSend Requests over HTTPS? Y/n")
 			prot = str(input(bcolors.BLUE + "Https: " + bcolors.ENDC))
