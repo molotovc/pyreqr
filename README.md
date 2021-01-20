@@ -1,5 +1,5 @@
 # pyreqr
-Distributed threaded python Requests testing tool
+Distributed threaded python GET Requests stress testing tool
 
 Requires
 - pip installed requests and fake_useragent
