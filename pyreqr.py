@@ -10,7 +10,7 @@ class bcolors:
 	ENDC = '\033[0m'
 
 def quitSession():
-	print(" " + quit)
+	print(" Quiting...")
 	sys.exit(0)
 
 def clearTerminal():
@@ -238,7 +238,6 @@ def main():
 reckless = False
 protocol, host, portadd, proxies = "https", "", "", ""
 port, generation, banned, success, failed, s200, ns200, tries, startTime = 443, 0, 0, 0, 0, 0, 0, 0, 0
-quit = "Quiting..."
 
 if __name__ == '__main__':
 	main()
