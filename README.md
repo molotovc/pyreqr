@@ -22,9 +22,9 @@ SSL/HTTPS Requests to an IPv4 address is not recommended as it should throw an S
 Caution! Tool as is might send all requests coming from your default gateway. (see proxyhttp* files)
 
 Performance and bottlenecks
-- CPU, (LAN/)WAN & Proxy bandwidth / throughput (networking speed) dependent (Higher is better)
-- Machine - network - proxy - endpoint latency (Lower is better)
-- Amount of data transfered each request (Higher lowers requests/s & Lower should increase requests/s)
+- CPU, (LAN/)WAN & Proxy bandwidth / throughput (networking speed) dependent (Higher = better)
+- Machine - network - proxy - endpoint latency (Lower = better)
+- Amount of data transfered each request (Higher = most destructive and lowers requests/s & Lower = least destructive and increases requests/s)
 - Endpoint load capabilities (Lower is better for achieving a 503 Service unavailable error)
 
 Tool should be able to generate up to a 100 requests/s on moderate hardware with decent proxies. Starting from a 100 threads you can work your way up until the requests/s don't improve anymore. Tested on Intel® Core™ i7-7500U CPU @ 2.70GHz × 4 (1 core used) achieves ~250 requests/s. On the same machine tested i've easily executed up to 5000 threads but the requests/s would stay arround 250. (my max performance)
