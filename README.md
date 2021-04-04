@@ -24,7 +24,8 @@ Caution! Tool as is might send all requests coming from your default gateway. (s
 Performance and bottlenecks
 - CPU, (LAN/)WAN & Proxy bandwidth / throughput (networking speed) dependent (Higher is better)
 - Machine - network - proxy - endpoint latency (Lower is better)
-- Amount of data transfered each request (Higher is more destructive and lowers requests/s & Lower should increase requests/s)
+- Amount of data transfered each request (Higher lowers requests/s & Lower should increase requests/s)
+- Endpoint load capabilities (Lower is better for achieving a 503 Service unavailable error)
 
 Tool should be able to generate up to a 100 requests/s on moderate hardware with decent proxies. Starting from a 100 threads you can work your way up until the requests/s don't improve anymore. Tested on Intel® Core™ i7-7500U CPU @ 2.70GHz × 4 (1 core used) achieves ~250 requests/s. On the same machine tested i've easily executed up to 5000 threads but the requests/s would stay arround 250. (my max performance)
 
