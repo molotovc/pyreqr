@@ -17,9 +17,8 @@ Text files
 - proxyhttps for all https proxies
 - proxyhttpr for bulk unsure proxies http(s)
 
+Caution! Proxyhttp files might send all requests originating from your default gateway / router. (see proxyhttp* files)
 SSL/HTTPS Requests to an IPv4 address is not recommended as it should throw an SSLError by default. Fill proxies in their .txt file 1 address:port each line no spaces and no empty lines.
-
-Caution! Tool as is might send all requests coming from your default gateway. (see proxyhttp* files)
 
 Performance, bottlenecks and more information
 - CPU, (LAN/)WAN & Proxy bandwidth / throughput (networking speed) dependent (Higher = better)
